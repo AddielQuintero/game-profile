@@ -1,0 +1,30 @@
+.location--profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 1rem;
+  margin: 2rem auto 1rem;
+  @include box;
+  @include media(tablet-l-only) {
+    width: 40%;
+  }
+  @include media(desktop-s){
+    width: 60%;
+  }
+  i {
+    color: $color-variation;
+    font-size: 50px;
+    margin-right: 1rem;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    @include title($font-2);
+  }
+  h3 {
+    font-size: 12px;
+    @include title($font-2);
+    color: get-opacity($color-primary, 0.5);
+  }
+}

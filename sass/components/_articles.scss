@@ -1,0 +1,29 @@
+.article {
+  //background: $color-primary;
+  width: auto;
+  padding: 50px 15px 0;
+  @include media(desktop-s) {
+    width: 40%;
+    padding: 50px 0 0 50px;
+  }
+}
+
+.article__item {
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid $color-secondary;
+  &-category {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $color-secondary;
+    @include title($font-2);
+  }
+  &-title {
+    font-size: 1.25rem;
+    color: $color-primary;
+    @include title($font-2);
+  }
+  &-description {
+    font-size: 1.125rem;
+    margin-bottom: 1.8rem;
+  }
+}

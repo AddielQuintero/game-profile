@@ -1,0 +1,43 @@
+.profile__gallery {
+  width: 80%;
+  padding: 1.55rem;
+  margin: 1rem auto 2rem;
+  @include box;
+  @include media(tablet-l-only) {
+    width: 60%;
+  }
+
+  &-name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    @include title($font-2);
+  }
+
+  &-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.2vw;
+
+    &--principal {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    &--additional {
+      grid-row: span 1;
+      grid-column: span 1;
+      &:nth-of-type(2) {
+        grid-row: span 1;
+        grid-column: span 2;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+}

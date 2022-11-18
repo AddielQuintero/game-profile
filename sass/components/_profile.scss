@@ -1,0 +1,48 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  @include media(desktop-s){
+    width: 45%;
+  }
+  //background: red;
+  &__avatar {
+    display: block;
+    border-radius: 50em;
+  }
+  &__name {
+    font-size: 20px;
+    text-align: center;
+    color: $color-secondary;
+    @include title($font-2);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: get-opacity($color-variation, 0.5);
+    @include title($font-2);
+  }
+  &__button {
+    display: block;
+    width: 6.25rem;
+    margin: 15px auto;
+    padding: 5px 0;
+    border-radius: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: $color-primary;
+    border: 2px solid get-opacity($color-claro, 0.3);
+    color: $color-claro;
+    @include title($font-2);
+  }
+  &__minimum {
+    h2 {
+      @extend .profile__name;
+    }
+    h3 {
+      @extend .profile__title;
+    }
+  }
+}
