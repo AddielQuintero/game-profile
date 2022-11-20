@@ -1,0 +1,54 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-primary;
+  @include media(desktop-s) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    max-width: 15.6rem;
+    margin-left: 0.7rem;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    @include media(desktop-s) {
+      flex-direction: row;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 0;
+      color: $color-claro;
+      @include media(desktop-s) {
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+  &__menu {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    @include title($font-2);
+  }
+  &__menu-item,
+  &__social-item {
+    margin: 0 0.5rem;
+    a {
+      color: $color-claro;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Game Profile</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/288c13323a.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -30,20 +33,19 @@
       </nav>
       <div class="header__access">
         <a class="header__access-profile" href="#">
-          <i class="fas fa-user-alt"></i>
+          <i class="fa-solid fa-user"></i>
         </a>
         <a class="header__access-search" href="#">
-          <i class="fas fa-search"></i><span>Search</span>
+          <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
         </a>
-<!--        <button class="nav-toggle">-->
-          <a class="header__access-menu nav-toggle" href="#">
-            <i class="fas fa-bars"></i>
-          </a>
-<!--        </button>-->
+        <!--        <button class="nav-toggle">-->
+        <a class="header__access-menu nav-toggle" href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <!--        </button>-->
       </div>
     </header>
     <main>
-                  <div class="part-one">
       <section class="profile">
         <img class="profile__avatar" src="images/avatar.jpg" alt="JOHN WICK" />
         <h2 class="profile__name">JOHN WICK</h2>
@@ -92,8 +94,6 @@
           </div>
         </div>
       </section>
-                  </div>
-                  <div class="part-two">
       <aside class="article">
         <div class="article__item">
           <h3 class="article__item-category">PLAYSTATION</h3>
@@ -129,7 +129,35 @@
           </p>
         </div>
       </aside>
-                  </div>
     </main>
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="images/logo--footer.svg" alt="" />
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li class="footer__menu-item"><a href="#">PLAY STATION</a></li>
+          <li class="footer__menu-item"><a href="#">XBOX</a></li>
+          <li class="footer__menu-item"><a href="#">NINTENDO</a></li>
+          <li class="footer__menu-item"><a href="#">PC</a></li>
+          <li class="footer__menu-item"><a href="#">MOBILE</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">Siguenos</li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
