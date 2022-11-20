@@ -1,2 +1,2 @@
 # game-profile
-Practicing project CSS preprocessors
+CSS preprocessors
