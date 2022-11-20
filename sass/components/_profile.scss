@@ -1,19 +1,13 @@
-.part-one {
-  padding-top: 2.5rem;
-  @include media(desktop-s) {
-    width: 45%;
-  }
-}
-
 .profile {
   display: flex;
   flex-direction: column;
+  padding-top: 3.125rem;
   align-items: center;
   width: auto;
+  background: $color-secondary;
   @include media(desktop-s) {
-    width: 100%;
+    width: 45%;
   }
-  //background: red;
   &__avatar {
     display: block;
     border-radius: 50em;
@@ -21,14 +15,14 @@
   &__name {
     font-size: 20px;
     text-align: center;
-    color: $color-secondary;
+    color: $color-claro;
     @include title($font-2);
   }
   &__title {
     font-weight: 700;
     font-size: 12px;
     text-align: center;
-    color: get-opacity($color-variation, 0.5);
+    color: get-opacity($color-claro, 0.5);
     @include title($font-2);
   }
   &__button {

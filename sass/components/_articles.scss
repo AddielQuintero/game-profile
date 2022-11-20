@@ -1,21 +1,15 @@
-.part-two {
-  padding-top: 2.5rem;
+.article {
   display: inline-block;
-  background: $color-primary;
+  width: auto;
+  padding: 3.125rem 3rem 0;
   @include media(desktop-s) {
     width: 55%;
+    padding-right: 4rem;
+  }
+  @include media(desktop-m) {
+    padding-right: 10rem;
   }
 }
-
-.article {
-  width: auto;
-  padding: 50px 15px 0;
-  @include media(desktop-s) {
-    width: 75%;
-    padding: 50px 0 0 50px;
-  }
-}
-
 .article__item {
   margin-bottom: 2.5rem;
   border-bottom: 3px solid $color-secondary;
@@ -33,6 +27,5 @@
   &-description {
     margin-bottom: 1.8rem;
     font-size: 1.125rem;
-    color: $color-claro;
   }
 }
