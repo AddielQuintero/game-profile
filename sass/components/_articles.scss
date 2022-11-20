@@ -1,9 +1,17 @@
+.part-two {
+  padding-top: 2.5rem;
+  display: inline-block;
+  background: $color-primary;
+  @include media(desktop-s) {
+    width: 55%;
+  }
+}
+
 .article {
-  //background: $color-primary;
   width: auto;
   padding: 50px 15px 0;
   @include media(desktop-s) {
-    width: 40%;
+    width: 75%;
     padding: 50px 0 0 50px;
   }
 }
@@ -23,7 +31,8 @@
     @include title($font-2);
   }
   &-description {
-    font-size: 1.125rem;
     margin-bottom: 1.8rem;
+    font-size: 1.125rem;
+    color: $color-claro;
   }
 }

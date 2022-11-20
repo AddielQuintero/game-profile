@@ -12,64 +12,88 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/552ebddad2.js"></script>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo" href="#">
+          <img src="images/logo--header.svg" alt="" />
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="">PLAY STATION</a></li>
+          <li class="header__menu-item"><a href="">XBOX</a></li>
+          <li class="header__menu-item"><a href="">NINTENDO</a></li>
+          <li class="header__menu-item"><a href="">PC</a></li>
+          <li class="header__menu-item"><a href="">MOBILE</a></li>
+        </ul>
+      </nav>
+      <div class="header__access">
+        <a class="header__access-profile" href="#">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a class="header__access-search" href="#">
+          <i class="fas fa-search"></i><span>Search</span>
+        </a>
+<!--        <button class="nav-toggle">-->
+          <a class="header__access-menu nav-toggle" href="#">
+            <i class="fas fa-bars"></i>
+          </a>
+<!--        </button>-->
+      </div>
+    </header>
     <main>
-<!--      <div class="part-one">-->
-        <section class="profile">
-          <img
-            class="profile__avatar"
-            src="images/avatar.jpg"
-            alt="JOHN WICK"
-          />
-          <h2 class="profile__name">JOHN WICK</h2>
-          <h3 class="profile__title">ASESINO LEGENDARIO</h3>
-          <a class="profile__button" href="#">seguir</a>
-          <div class="statistic--profile">
-            <div class="statistic_element">
-              <h3>12k</h3>
-              <span>seguidores</span>
+                  <div class="part-one">
+      <section class="profile">
+        <img class="profile__avatar" src="images/avatar.jpg" alt="JOHN WICK" />
+        <h2 class="profile__name">JOHN WICK</h2>
+        <h3 class="profile__title">ASESINO LEGENDARIO</h3>
+        <a class="profile__button" href="#">seguir</a>
+        <div class="statistic--profile">
+          <div class="statistic_element">
+            <h3>12k</h3>
+            <span>seguidores</span>
+          </div>
+          <div class="statistic_element">
+            <h3>1.7k</h3>
+            <span>siguiendo</span>
+          </div>
+          <div class="statistic_element">
+            <h3>48</h3>
+            <span>articulos</span>
+          </div>
+        </div>
+        <div class="profile__minimum">
+          <h2>Acerca de mi</h2>
+          <h3>ASESINO A SUELDO RETIRADO Y AMANTE DE PERROS</h3>
+        </div>
+        <div class="location--profile">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h2>Estados Unidos</h2>
+            <h3>227km cerca</h3>
+          </div>
+        </div>
+        <div class="profile__gallery">
+          <h2 class="profile__gallery-name">mis fotos</h2>
+          <div class="profile__gallery-item">
+            <div class="profile__gallery-item--principal">
+              <img src="images/gallery-1.jpg" alt="" />
             </div>
-            <div class="statistic_element">
-              <h3>1.7k</h3>
-              <span>siguiendo</span>
+            <div class="profile__gallery-item--additional">
+              <img src="images/gallery-2.jpg" alt="" />
             </div>
-            <div class="statistic_element">
-              <h3>48</h3>
-              <span>articulos</span>
+            <div class="profile__gallery-item--additional">
+              <img src="images/gallery-3.jpg" alt="" />
+            </div>
+            <div class="profile__gallery-item--additional">
+              <img src="images/gallery-4.jpg" alt="" />
             </div>
           </div>
-          <div class="profile__minimum">
-            <h2>Acerca de mi</h2>
-            <h3>ASESINO A SUELDO RETIRADO Y AMANTE DE PERROS</h3>
-          </div>
-          <div class="location--profile">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h2>Estados Unidos</h2>
-              <h3>227km cerca</h3>
-            </div>
-          </div>
-          <div class="profile__gallery">
-            <h2 class="profile__gallery-name">mis fotos</h2>
-            <div class="profile__gallery-item">
-              <div class="profile__gallery-item--principal">
-                <img src="images/gallery-1.jpg" alt="" />
-              </div>
-              <div class="profile__gallery-item--additional">
-                <img src="images/gallery-2.jpg" alt="" />
-              </div>
-              <div class="profile__gallery-item--additional">
-                <img src="images/gallery-3.jpg" alt="" />
-              </div>
-              <div class="profile__gallery-item--additional">
-                <img src="images/gallery-4.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-<!--      </div>-->
-<!--      <div class="part-two">-->
+        </div>
+      </section>
+                  </div>
+                  <div class="part-two">
       <aside class="article">
         <div class="article__item">
           <h3 class="article__item-category">PLAYSTATION</h3>
@@ -105,7 +129,7 @@
           </p>
         </div>
       </aside>
-<!--      </div>-->
+                  </div>
     </main>
   </body>
 </html>

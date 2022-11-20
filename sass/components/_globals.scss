@@ -15,22 +15,11 @@ body {
 }
 
 main {
-  padding: 4rem 1rem 2rem;
+  //background: rosybrown;
+  padding: 4.8rem 0 0;
   @include media(desktop-s) {
     display: flex;
   }
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?bxnsu8');
-  src: url('../fonts/icomoon.eot?bxnsu8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?bxnsu8') format('truetype'),
-    url('../fonts/icomoon.woff?bxnsu8') format('woff'),
-    url('../fonts/icomoon.svg?bxnsu8#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
 }
 
 * {
@@ -44,15 +33,14 @@ h4,
 h5,
 h6 {
   margin: 0;
-  //margin-bottom: 0.5rem;
 }
 
 p,
 ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
+  list-style: none;
 }
 
 @mixin box {
