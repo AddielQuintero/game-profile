@@ -5,10 +5,10 @@
   padding: 1rem;
   margin: 1rem auto;
   @include box;
-  @include media(tablet-l-only) {
+  @include media(md-only) {
     width: 40%;
   }
-  @include media(desktop-s) {
+  @include media(lg) {
     width: 60%;
   }
   h3 {
