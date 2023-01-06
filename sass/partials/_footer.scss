@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: $color-primary;
-  @include media(desktop-s) {
+  background: $primary;
+  @include media(lg) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -19,7 +19,7 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    @include media(desktop-s) {
+    @include media(lg) {
       flex-direction: row;
     }
 
@@ -29,8 +29,8 @@
       align-items: center;
       margin-bottom: 1rem;
       padding: 0;
-      color: $color-claro;
-      @include media(desktop-s) {
+      color: $white;
+      @include media(lg) {
         margin: 0 1rem 0 0;
       }
     }
@@ -44,7 +44,7 @@
   &__social-item {
     margin: 0 0.5rem;
     a {
-      color: $color-claro;
+      color: $white;
       text-decoration: none;
       &:hover {
         text-decoration: underline;

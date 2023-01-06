@@ -5,6 +5,7 @@
   width: 100%;
   border-bottom: 2px solid #ebebeb;
   background: white;
+  z-index: 2;
   @include title($font-2);
   &__logo {
     max-width: 15.6rem;
@@ -21,17 +22,17 @@
 
   &__menu {
     display: flex;
-    @include media(mobile) {
+    @include media(md) {
       flex-direction: column;
       align-items: center;
       width: 100%;
-      height: calc(100% - 4.1rem);
+      height: calc(100% - 4rem);
       padding: 20px 0;
       position: fixed;
-      top: 4.1rem;
+      top: 4rem;
       margin: 0;
       left: 100%;
-      background-color: $color-secondary;
+      background-color: $secondary;
       overflow-y: auto;
       transition: left 0.3s;
     }
@@ -40,30 +41,30 @@
     }
     &-item {
       margin: 0 1rem;
-      @include media(mobile) {
+      @include media(md) {
         margin: 0.7rem auto;
       }
     }
     a {
-      color: $color-variation;
+      color: $variation;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
       }
-      @include media(mobile) {
-        color: $color-claro;
+      @include media(md) {
+        color: $white;
       }
     }
   }
   &__access {
     @extend .header__nav;
     a {
-      color: $color-secondary;
+      color: $secondary;
       font-size: 1.4rem;
       margin: 0 0.7rem;
       &:active,
       &:hover {
-        color: $color-variation;
+        color: $variation;
       }
     }
     &-search {
@@ -71,12 +72,12 @@
         margin-right: 0.4rem;
       }
       /* MOBILE */
-      @include media(mobile) {
+      @include media(md) {
         display: none;
       }
     }
     &-menu {
-      @include media(desktop-s) {
+      @include media(lg) {
         display: none;
       }
     }
