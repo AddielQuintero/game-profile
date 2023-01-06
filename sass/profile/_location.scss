@@ -6,14 +6,14 @@
   padding: 1rem;
   margin: 2rem auto 1rem;
   @include box;
-  @include media(tablet-l-only) {
+  @include media(md-only) {
     width: 40%;
   }
-  @include media(desktop-s){
+  @include media(lg){
     width: 60%;
   }
   i {
-    color: $color-variation;
+    color: $variation;
     font-size: 50px;
     margin-right: 1rem;
   }
@@ -25,6 +25,6 @@
   h3 {
     font-size: 12px;
     @include title($font-2);
-    color: get-opacity($color-primary, 0.5);
+    color: get-opacity($primary, 0.5);
   }
 }

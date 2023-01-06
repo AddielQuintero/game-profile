@@ -1,11 +1,18 @@
+.content__profile {
+  padding: 4rem 0 0;
+  @include media(lg) {
+    display: flex;
+  }
+}
+
 .profile {
   display: flex;
   flex-direction: column;
   padding-top: 3.125rem;
   align-items: center;
   width: auto;
-  background: $color-secondary;
-  @include media(desktop-s) {
+  background: $secondary;
+  @include media(lg) {
     width: 45%;
   }
   &__avatar {
@@ -15,14 +22,14 @@
   &__name {
     font-size: 20px;
     text-align: center;
-    color: $color-claro;
+    color: $white;
     @include title($font-2);
   }
   &__title {
     font-weight: 700;
     font-size: 12px;
     text-align: center;
-    color: get-opacity($color-claro, 0.5);
+    color: get-opacity($white, 0.5);
     @include title($font-2);
   }
   &__button {
@@ -33,9 +40,9 @@
     border-radius: 1.25rem;
     text-decoration: none;
     text-align: center;
-    background-color: $color-primary;
-    border: 2px solid get-opacity($color-claro, 0.3);
-    color: $color-claro;
+    background-color: $primary;
+    border: 2px solid get-opacity($white, 0.3);
+    color: $white;
     @include title($font-2);
   }
   &__minimum {

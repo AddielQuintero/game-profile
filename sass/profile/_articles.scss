@@ -2,26 +2,26 @@
   display: inline-block;
   width: auto;
   padding: 3.125rem 3rem 0;
-  @include media(desktop-s) {
+  @include media(lg) {
     width: 55%;
     padding-right: 4rem;
   }
-  @include media(desktop-m) {
+  @include media(xl) {
     padding-right: 10rem;
   }
 }
 .article__item {
   margin-bottom: 2.5rem;
-  border-bottom: 3px solid $color-secondary;
+  border-bottom: 3px solid $secondary;
   &-category {
     font-weight: 500;
     font-size: 0.875rem;
-    color: $color-secondary;
+    color: $secondary;
     @include title($font-2);
   }
   &-title {
     font-size: 1.25rem;
-    color: $color-primary;
+    color: $primary;
     @include title($font-2);
   }
   &-description {
