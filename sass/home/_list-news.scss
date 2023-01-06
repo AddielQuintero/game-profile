@@ -1,0 +1,41 @@
+.list__news {
+  -webkit-box-shadow: 0 20px 33px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 20px 33px 0 rgb(0 0 0 / 30%);
+  padding: 1.5rem 1rem;
+  border-radius: .312rem;
+  width: 100%;
+  @include title($font-2);
+  @include media(lg) {
+    height: 100%;
+  
+  }
+  h5 {
+    color: $primary;
+  }
+  ol {
+    padding: 0;
+  }
+  li {
+    border-top: 1px solid #ccc;
+    padding: 1.5rem 0.3rem;
+    height: auto;
+    &:first-of-type {
+      margin-top: 1rem;
+    }
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    text-transform: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  span {
+    color: #33333380;
+  }
+  p {
+    padding-left: 2rem;
+    color: $primary;
+  }
+}

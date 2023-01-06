@@ -1,0 +1,35 @@
+.banner__homepage {
+  background-color: $secondary;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  border-radius: .312rem;
+  @include title($font-2);
+  @include media(lg) {
+    height: 100%;
+  }
+
+  p{
+    color: $light;
+    text-transform: none;
+  }
+  
+  .button {
+    display: block;
+    width: 7rem;
+    cursor: pointer;
+    margin: .8rem 0;
+    padding: 0.312rem 1.25rem;
+    border-radius: 1.25rem;
+    border: 2px solid $white;
+    color: white;
+    text-decoration: none;
+    @include title($font-2);
+
+    &:hover,
+    &:focus {
+      color: $light;
+      border-color: $light;
+    }
+  }
+}
