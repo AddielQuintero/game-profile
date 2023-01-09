@@ -1,0 +1,39 @@
+.header__seeker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  color: $primary;
+  @include title($font-2);
+  @include media(lg) {
+    flex-direction: row;
+    padding: 2rem 3rem;
+  }
+
+  &-filter {
+    -webkit-box-shadow: 0 20px 33px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 20px 33px 0 rgb(0 0 0 / 30%);
+    border-radius: 0.312rem;
+    padding: 1rem;
+    @include media(md) {
+      margin-top: 1rem;
+    }
+    .active{
+      color: #757575;
+      //color: red;
+    }
+
+    span,
+    a:first-of-type {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: #ccc;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

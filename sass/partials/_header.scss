@@ -73,7 +73,10 @@
       }
       /* MOBILE */
       @include media(md) {
-        display: none;
+        order: -1;
+        span{
+          display: none;
+        }
       }
     }
     &-menu {
