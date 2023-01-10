@@ -16,7 +16,7 @@
   .news__card {
     -webkit-box-shadow: 0 20px 33px 0 rgb(0 0 0 / 50%);
     box-shadow: 0 20px 33px 0 rgb(0 0 0 / 30%);
-    width: 370px;
+    max-width: 500px;
     border-radius: 0.312rem;
     display: flex;
     flex-direction: column;
