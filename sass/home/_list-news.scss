@@ -22,6 +22,9 @@
     &:first-of-type {
       margin-top: 1rem;
     }
+    &:last-of-type{
+      // border-bottom: 1px solid #ccc;
+    }
   }
   a {
     display: flex;
@@ -29,6 +32,7 @@
     text-transform: none;
     &:hover {
       text-decoration: underline;
+      color: $variation;
     }
   }
   span {
