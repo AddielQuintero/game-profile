@@ -4,6 +4,7 @@
   margin: 0 auto;
   gap: 1rem;
   @include media(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     width: 90%;
   }
 
