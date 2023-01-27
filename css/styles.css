@@ -1097,10 +1097,14 @@ h6, .h6 {
 .result__search {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin: 0 auto;
-  gap: 2rem;
+  gap: 1rem;
+}
+@media only screen and (min-width: 992px) {
+  .result__search {
+    width: 90%;
+  }
 }
 .result__search .news__card {
   -webkit-box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.5);

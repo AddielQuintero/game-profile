@@ -1,9 +1,11 @@
 .result__search {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin: 0 auto;
-  gap: 2rem;
+  gap: 1rem;
+  @include media(lg) {
+    width: 90%;
+  }
 
   .news__card {
     -webkit-box-shadow: 0 20px 33px 0 rgb(0 0 0 / 50%);
