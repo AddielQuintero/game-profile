@@ -1244,6 +1244,9 @@ h6, .h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .result__search-bars .news__card-content span {
@@ -1495,4 +1498,74 @@ h6, .h6 {
 .content__article .view__more .list__news {
   -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.content__gallery {
+  padding: 4.5rem 0.5rem 2rem;
+}
+.content__gallery--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #673ab7;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.content__gallery--header__title {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.content__gallery--header__action {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.312rem;
+  color: #333333;
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.content__gallery--header__action:hover {
+  -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+@media only screen and (max-width: 991.98px) {
+  .content__gallery--header__action span {
+    display: none;
+  }
+}
+.content__gallery--content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.content__gallery--content .video__card {
+  border-radius: 0.312rem;
+  -webkit-box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 430px;
+}
+.content__gallery--content .video__card--header video {
+  width: 100%;
+}
+.content__gallery--content .video__card--body {
+  padding: 1rem;
+}
+.content__gallery--content .video__card--body a {
+  text-decoration: none;
+  color: #000000;
+}
+.content__gallery--content .video__card--body span {
+  color: rgba(51, 51, 51, 0.5019607843);
 }

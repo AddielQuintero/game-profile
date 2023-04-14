@@ -112,6 +112,7 @@
       grid-row: span 1;
       @include media(lg) {
         display: flex;
+        justify-content: space-between;
       }
     }
 

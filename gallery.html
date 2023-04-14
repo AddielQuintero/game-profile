@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Oswald:400,500,600,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/288c13323a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <style type="text/scss " media="screen">
+  .content__gallery {
+  padding: 4.5rem 0.5rem 2rem;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    background-color: $bg-secondary;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+
+    &__title {
+      margin: 0 auto;
+      color: #ffffff;
+      text-align: center;
+      @include title($font-2);
+    }
+
+    &__action {
+      height: fit-content;
+      border: 0;
+      padding: 0.5rem 1rem;
+      border-radius: 0.312rem;
+      color: $primary;
+      box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+        0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+          0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+      }
+
+      @include media(md) {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  &--content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+
+    .video__card {
+      border-radius: 0.312rem;
+      -webkit-box-shadow: 0 20px 33px 0 rgb(0 0 0 / 50%);
+      box-shadow: 0 20px 33px 0 rgb(0 0 0 / 30%);
+      overflow: hidden;
+      margin: 0 auto;
+      //   @include media(lg) {
+      max-width: 430px;
+      //   }
+
+      &--header {
+        // height: 260px;
+
+        video {
+          width: 100%;
+        }
+      }
+      &--body {
+        padding: 1rem;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+
+        span {
+          color: $grey;
+        }
+      }
+    }
+  }
+}
+
+/** FOOTER */
+      .footer {
+        background: $primary;
+        color: $white;
+        padding: 0 2rem;
+        &__top {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: top;
+          padding: 2rem 0;
+          border-bottom: 1px solid #fff;
+          ul {
+            padding: 1rem 0;
+          }
+          .nav {
+            display: flex;
+          }
+          @include media(lg) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            ul.footer__menu,
+            a {
+              margin: 0 0.5rem 0 1rem;
+              padding: 0;
+            }
+          }
+        }
+
+        &__logo {
+          max-width: 15.6rem;
+          margin-left: 0.7rem;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+
+        &__logo--colombia {
+          display: block;
+          max-width: 2rem;
+          height: 2rem;
+          img {
+            width: 100%;
+          }
+        }
+        &__logo--gov {
+          display: block;
+          max-width: 7.1875rem;
+          height: 1.5625rem;
+          img {
+            width: 100%;
+          }
+        }
+        &__botton {
+          padding: 2rem 0 0.5rem;
+          text-align: center;
+
+          ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+          }
+          &--copyright {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            flex-direction: column;
+            @include media(lg) {
+              flex-direction: row;
+              ul {
+                order: -1;
+              }
+            }
+
+            div:last-child {
+              max-width: 167px;
+              display: flex;
+              flex-grow: 1;
+            }
+            li:first-child {
+              margin-right: 0.4rem;
+              padding-right: 0.8rem;
+              border-right: 1px solid #fff;
+            }
+          }
+        }
+        &__menu {
+          padding: 0;
+        }
+        &__menu-item,
+        &__social-item {
+          margin: 0 0.5rem;
+          a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    </style>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo" href="index.html">
+          <img src="images/logo--header.svg" alt="" />
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="">PLAY STATION</a></li>
+          <li class="header__menu-item"><a href="">XBOX</a></li>
+          <li class="header__menu-item"><a href="">NINTENDO</a></li>
+          <li class="header__menu-item"><a href="">PC</a></li>
+          <li class="header__menu-item"><a href="">MOBILE</a></li>
+          <li class="header__menu-item"><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+      <div class="header__access">
+        <a class="header__access-profile" href="profile.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="header__access-search" href="search.html">
+          <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+        </a>
+        <a class="header__access-menu nav-toggle" href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <main class="content__gallery">
+      <div class="content__gallery--header">
+        <button class="content__gallery--header__action">
+          <i class="fa-solid fa-bars"></i> <span>Sections</span>
+        </button>
+        <h1 class="content__gallery--header__title">Consolas</h1>
+        <button class="content__gallery--header__action">
+          <i class="fa-solid fa-magnifying-glass"></i> <span>Search</span>
+        </button>
+      </div>
+      <div class="content__gallery--content">
+        <div class="video__card">
+          <div class="video__card--header">
+            <video>
+              <source src="images//Digital world.mp4" />
+            </video>
+          </div>
+          <div class="video__card--body">
+            <div class="video__card--content">
+              <a href="article.html">
+                <h6 class="video__card--title">
+                  Apex Legends Temporada 2: un nuevo trailer muestra cambios al
+                  mapa
+                </h6>
+              </a>
+              <span class="video__card--visits">54 visitas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video__card">
+          <div class="video__card--header">
+            <video>
+              <source src="images//Digital world.mp4" />
+            </video>
+          </div>
+          <div class="video__card--body">
+            <div class="video__card--content">
+              <a href="article.html">
+                <h6 class="video__card--title">
+                  Apex Legends Temporada 2: un nuevo trailer muestra cambios al
+                  mapa
+                </h6>
+              </a>
+              <span class="video__card--visits">54 visitas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video__card">
+          <div class="video__card--header">
+            <video>
+              <source src="images//Digital world.mp4" />
+            </video>
+          </div>
+          <div class="video__card--body">
+            <div class="video__card--content">
+              <a href="article.html">
+                <h6 class="video__card--title">
+                  Apex Legends Temporada 2: un nuevo trailer muestra cambios al
+                  mapa
+                </h6>
+              </a>
+              <span class="video__card--visits">54 visitas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video__card">
+          <div class="video__card--header">
+            <video>
+              <source src="images//Digital world.mp4" />
+            </video>
+          </div>
+          <div class="video__card--body">
+            <div class="video__card--content">
+              <a href="article.html">
+                <h6 class="video__card--title">
+                  Apex Legends Temporada 2: un nuevo trailer muestra cambios al
+                  mapa
+                </h6>
+              </a>
+              <span class="video__card--visits">54 visitas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video__card">
+          <div class="video__card--header">
+            <video>
+              <source src="images//Digital world.mp4" />
+            </video>
+          </div>
+          <div class="video__card--body">
+            <div class="video__card--content">
+              <a href="article.html">
+                <h6 class="video__card--title">
+                  Apex Legends Temporada 2: un nuevo trailer muestra cambios al
+                  mapa
+                </h6>
+              </a>
+              <span class="video__card--visits">54 visitas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo" href="index.html">
+        <img src="images/logo--footer.svg" alt="" />
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li class="footer__menu-item"><a href="#">PLAY STATION</a></li>
+          <li class="footer__menu-item"><a href="#">XBOX</a></li>
+          <li class="footer__menu-item"><a href="#">NINTENDO</a></li>
+          <li class="footer__menu-item"><a href="#">PC</a></li>
+          <li class="footer__menu-item"><a href="#">MOBILE</a></li>
+          <li class="footer__menu-item"><a href="gallery.html">GALLERY</a></li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">Siguenos</li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
